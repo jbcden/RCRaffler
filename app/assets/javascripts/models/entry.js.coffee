@@ -1,6 +1,6 @@
 class Raffler.Models.Entry extends Backbone.Model
 
   win: ->
-    @winner.set(winner: true)
-    @winner.save()
-    @winner.trigger('highlight')
+    @set(winner: true)
+    @save()
+    @trigger('highlight')
